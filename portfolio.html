@@ -6,6 +6,7 @@
         <meta name="viewport" content="width-device-width,initial-scale=1.0">
         <title>Personal Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9eda56f8f2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -29,4 +30,120 @@
                 </div>
             </div>
         </div>
+ 
+<!- --------------------about----------------------- ->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="pic.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Passed my higher education from <b>wbbse board</b>. Percentage in 10th board is-72.5% in 2018 and 12th board is-86% in 2020. I am done my under graduate degree <b>B.Sc(Hons) in Computer Science</b> from Bangabasi College,(under CBCS)<b>Calcutta University</b> in 2023.My CGPA in UG is-8. I have done my post graduate <b>MCA</b> degree from <b>NIT Trichy</b> in 2026.My CGPA in PG MCA is-9.5. Then I persue <b>M.tech</b> from <b>IIT Madras</b> in 2028. My CGPA in during my M.tech is 9.5.</p>
+                        
+                        <p>I am a coding nerd,a huge interest in Cyber Security-to secure our cyber and Cloud -manage our data to use in righr place.</p>
+
+                        <p>And beside them,I am a intermidiate in Painting,Singing,Dancing. Also I am a entreprenuer in FOREVER LIVING Company,which is based on health.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id=""skills>
+                            <ul>
+                                <li><span>Cyber Information Security</span><br>Security Analyst, <br>Penetration Testing,<br>DevSecOps</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Android/iOS Development</li>
+                                <li><span>Game Development</span><br>Android/iOS/Web Game Design & Develope</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Data Scientist</span><br>Analyst,<br>ML/AI,<br>Data Analyst</li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span></span><br></li>
+                                <li><span></span><br></li>
+                                <li><span></span><br></li>
+                                <li><span></span><br></li>
+                                <li><span></span><br><br></li>
+                            </ul>
+                        </div>
+                        <br><br>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>IBM Cyber Security Certification</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Android/iOS Development</li>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Data Scientist</span><br>Analyst,<br>ML/AI</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ------------------services------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1> 
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Develope</h2>
+                        <p>Build website for business or educational fields.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-apple"></i>
+                        <h2>App Develope</h2>
+                        <p>Build Android and IOS app like gaming or teaching related.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Develope</h2>
+                        <p>Build flask game and make some animated 3D effects on it. </p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+                        <h2>UI/UX Design</h2>
+                        <p> Apply UI/UX design to those create site/apps/games or provide serives design with creating those applied.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h2>Cyber/Information Security</h2>
+                        <p>Secure the sites to demerit attacks and build the strongest cybner which does not easily crashed.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data/Cloud Scientist</h2>
+                        <p>Data Analising or to manage and use it in proper way in businesses or to manage those for provide proper recomendation in social sides.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    
+                </div> 
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsClassName("tab-links");
+            var tabcontents=document.getElementsClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tablink of tablinks){
+                    tabcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementByIf(tabname).classList.add("active-tab")
+            }
+        </script>
     </body>
+</html>
