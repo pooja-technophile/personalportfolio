@@ -31,7 +31,7 @@
             </div>
         </div>
  
-<!- --------------------about----------------------- ->
+<!---------------------------about------------------------> 
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -130,19 +130,57 @@
                 </div> 
             </div>
         </div>
+        <!-------------------portfolio------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                </div>
+            </div>
+        </div>
+
+        <!----------------contact--------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> poojabarui246@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9339634894</p>
+                        <div class="social-icons">
+                            <a href="https://twitter.com/its_pooja24?t=pZ8KDfN9wzpp8639oGTIvQ&s=09"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/pooja-barui-9840261ba"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/pooja-technophile"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/poo.ja.980315?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com/pooja.empire_?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <a href="MyResume 2023.pdf" class=" btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email Address" placeholder="Your Email Address" required>
+                        <textarea type="message" name="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <script>
-            var tablinks=document.getElementsClassName("tab-links");
-            var tabcontents=document.getElementsClassName("tab-contents");
+        
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
 
             function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tablink of tablinks){
-                    tabcontents.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementByIf(tabname).classList.add("active-tab")
+               for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+               }
+               for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+               }
+               event.currentTarget.classList.add("active-link");
+               document.getElementById(tabname).classList.add("active-tab")
+            
             }
         </script>
     </body>
